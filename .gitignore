@@ -3,4 +3,5 @@
 ################################################################################
 
 /SudokuValidator/bin/Debug/net8.0
-/SudokuValidator
+/.vs
+/SudokuValidator/obj
