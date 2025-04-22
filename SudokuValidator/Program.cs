@@ -30,13 +30,13 @@ public class SudokuValidator
             new int[] {1,9,5, 2,8,7, 6,3,4}
         };
 
-        Console.WriteLine("Testing valid Sudoku:");
+        Console.WriteLine("Valid Sudoku:");
         var validResult = ValidateSudoku(goodSudoku);
-        Console.WriteLine(validResult.isValid ? "Valid Sudoku" : $"Invalid: {validResult.error}");
+        Console.WriteLine(validResult.isValid ? "True" : $"False: {validResult.error}");
 
-        Console.WriteLine("\nTesting invalid Sudoku:");
+        Console.WriteLine("\nInvalid Sudoku:");
         var invalidResult = ValidateSudoku(badSudoku);
-        Console.WriteLine(invalidResult.isValid ? "Valid Sudoku" : $"Invalid: {invalidResult.error}");
+        Console.WriteLine(invalidResult.isValid ? "False" : $"False: {invalidResult.error}");
     }
 
     public static (bool isValid, string error) ValidateSudoku(int[][] sudoku)
